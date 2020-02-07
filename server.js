@@ -61,7 +61,3 @@ app.post("/create-item", function(req, res) {
       res.redirect("/")
     })
 })
-
-app.get("/item.link", function (req, res) {
-  res.redirect(req.body.link)
-})
