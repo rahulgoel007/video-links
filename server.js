@@ -39,7 +39,7 @@ app.get("/", function(req, res){
     <ul class="list-group pb-5">
     ${items.map(function (item) {
         return `<li class="list-group-item list-group-item-action d-flex align-items-center justify-content-between">
-        <span class="item-text">${item.movie+ " - " + `<a href="item.link"> ${item.link} </a>`}</span>
+        <span class="item-text">${`<a href="${item.link}"> ${item.movie} </a>`}</span>
         <div>
           <button class="edit-me btn btn-secondary btn-sm mr-1">Edit</button>
           <button class="delete-me btn btn-danger btn-sm">Delete</button>
